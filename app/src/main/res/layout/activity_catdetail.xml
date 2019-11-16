@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activitycatdetlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="60dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_catdet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cat_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/favcat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Name"
+                android:textColor="#63D2C8"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cat_photo" />
+
+            <TextView
+                android:id="@+id/catorigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Origin:"
+                android:textColor="#63D2C8"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/favcat_name" />
+
+            <TextView
+                android:id="@+id/cat_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="corigin"
+                android:textColor="#000000"
+                app:layout_constraintStart_toEndOf="@id/catorigin"
+                app:layout_constraintTop_toBottomOf="@+id/favcat_name" />
+
+            <TextView
+                android:id="@+id/dogfriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="20dp"
+                android:text="Dog Friend"
+                android:textColor="#63D2C8"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/cat_origin"
+                app:layout_constraintTop_toBottomOf="@+id/favcat_name" />
+
+            <TextView
+                android:id="@+id/cat_dogfriendlvl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="dogfriendlvl"
+                android:textColor="#000000"
+                app:layout_constraintStart_toEndOf="@id/dogfriend"
+                app:layout_constraintTop_toBottomOf="@+id/favcat_name" />
+
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Weight:"
+                android:textColor="#63D2C8"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dogfriend" />
+
+            <TextView
+                android:id="@+id/cat_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="weightsinkg"
+                android:textColor="#000000"
+                app:layout_constraintStart_toEndOf="@id/catorigin"
+                app:layout_constraintTop_toBottomOf="@+id/cat_dogfriendlvl" />
+
+            <TextView
+                android:id="@+id/lifespan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:text="Lifespan:"
+                android:textColor="#63D2C8"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/cat_origin"
+                app:layout_constraintTop_toBottomOf="@+id/cat_dogfriendlvl" />
+
+            <TextView
+                android:id="@+id/cat_lifespan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="lifespanyears"
+                android:textColor="#000000"
+                app:layout_constraintStart_toEndOf="@id/lifespan"
+                app:layout_constraintTop_toBottomOf="@+id/cat_dogfriendlvl" />
+
+            <TextView
+                android:id="@+id/wikipedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Wikipedia Link:"
+                android:textColor="#63D2C8"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weight"/>
+
+            <TextView
+                android:id="@+id/cat_wikilink"
+                android:layout_width="281dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="40dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="link"
+                android:textColor="#000000"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintStart_toEndOf="@id/wikipedia"
+                app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+                android:textColor="#63D2C8"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wikipedia" />
+
+            <TextView
+                android:id="@+id/cat_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:paddingRight="20dp"
+                android:text="description text"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cat_wikilink" />
+
+            <TextView
+                android:id="@+id/Temperament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Temperament"
+                android:textColor="#63D2C8"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cat_description" />
+
+            <TextView
+                android:id="@+id/cat_temperament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="20dp"
+                android:layout_marginRight="40dp"
+                android:text="temperament text"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Temperament" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/fav_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#505050"
+        android:text="Favourite"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
